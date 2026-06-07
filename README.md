@@ -4,6 +4,8 @@ This (very) simple repo allows you to connect your kindle remotely from anywhere
 
 ## Prerequisites:
 
+0. The [minimum kernel version reqirement](https://go.dev/wiki/MinimumRequirements) for [Go](https://go.dev/) (and hence [tailscale](https://github.com/tailscale/tailscale)) is `2.6.32`. You should check your kernel version via `uname -r` before proceeding.
+
 1. Jailbroken Kindle. ([see](https://kindlemodding.gitbook.io/kindlemodding))
 2. [KUAL](https://wiki.mobileread.com/wiki/KUAL) installed. ([see](https://kindlemodding.gitbook.io/kindlemodding/post-jailbreak/installing-kual-mrpi))
 3. (Optional) [USBNetworking](https://www.mobileread.com/forums/showthread.php?t=225030) hack installed and [enabled](https://wiki.mobileread.com/wiki/USBNetwork).
