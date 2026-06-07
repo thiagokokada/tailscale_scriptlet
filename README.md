@@ -5,7 +5,6 @@ This (very) simple repo allows you to connect your kindle remotely from anywhere
 ## Prerequisites:
 
 0. The [minimum kernel version reqirement](https://go.dev/wiki/MinimumRequirements) for [Go](https://go.dev/) (and hence [tailscale](https://github.com/tailscale/tailscale)) is `2.6.32`. You should check your kernel version via `uname -r` before proceeding.
-
 1. Jailbroken Kindle. ([see](https://kindlemodding.gitbook.io/kindlemodding))
 2. [KUAL](https://wiki.mobileread.com/wiki/KUAL) installed. ([see](https://kindlemodding.gitbook.io/kindlemodding/post-jailbreak/installing-kual-mrpi))
 3. (Optional) [USBNetworking](https://www.mobileread.com/forums/showthread.php?t=225030) hack installed and [enabled](https://wiki.mobileread.com/wiki/USBNetwork).
@@ -63,9 +62,10 @@ The proxy listen address defaults to `localhost:1055`. To use a different addres
 
 After starting tailscaled in this mode and bringing tailscale up, configure KOReader's network proxy:
 
-- Open KOReader → **Settings** → **Network** → **Proxy Settings**
-- Set type to **SOCKS5** (or HTTP)
-- Host: `localhost`, Port: `1055` (or whatever you set in `proxy.address`)
+- Open **KOReader** → _swipe down_ → **Settings** (gear icon) → **Network**
+- Long press **HTTP proxy** to edit the url
+- Enter `http://localhost:1055` (or whatever you set in `proxy.address`)
+- Don't forget to enable it!
 
 Once set, any request KOReader makes will go out through your tailnet.
 
