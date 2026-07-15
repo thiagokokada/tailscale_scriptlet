@@ -73,6 +73,12 @@ Once set, any request KOReader makes will go out through your tailnet.
 
 Runs `tailscaled` without the userspace-networking flag, relying on the kernel's TUN/TAP module instead. This gives full system-wide outgoing connectivity but requires the `tun` kernel module to be present and loadable. **This is not available on all Kindle firmware versions** — if it fails silently, fall back to Proxy Mode.
 
+## `tailscale up` arguments (`up.args`)
+
+`start_tailscale.sh` passes the contents of the file `up.args` (in `extensions/tailscale/bin/`) to `tailscale up`, verbatim.  It should be a single line.
+
+Default: `--ssh` Example: `--ssh --accept-routes`
+
 ## Installing and Updating Tailscale Binaries
 
 The KUAL menu has a single **Install / Update Binaries** entry that handles both cases automatically:
