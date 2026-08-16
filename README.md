@@ -13,16 +13,15 @@ This (very) simple repo allows you to connect your kindle remotely from anywhere
 > [!NOTE]
 > SSH setup using USBNetworking is optional because Tailscale will be started using `--ssh`, which enables [Tailscale SSH](https://tailscale.com/docs/features/tailscale-ssh).
 
-## My Kindle:
+## Unsupported devices:
 
-I have a PaperWhite (7th Generation), referred to as [PW3](https://wiki.mobileread.com/wiki/Kindle_Serial_Numbers).
+### Unmet kernel version requirements
 
-```
-[root@kindle root]# uname -a
-Linux kindle 3.0.35-lab126 #8 PREEMPT Tue Aug 1 12:49:59 UTC 2023 armv7l GNU/Linux
-```
+1. [Kindle Paperwhite (Gen 1) (PW)](https://github.com/mitanshu7/tailscale_kual/issues/24)
+2. [Kindle Keyboard (3rd Generation) (K3G)](https://github.com/mitanshu7/tailscale_kual/issues/19#issuecomment-4183681305)
+3. [Kindle 4 (K4)](https://github.com/mitanshu7/tailscale_kual/issues/19#issuecomment-4431271723)
 
-Having tested out on this device only, [YMMV](https://dictionary.cambridge.org/dictionary/english/ymmv).
+List of Amazon [Kindles](https://wiki.mobileread.com/wiki/Amazon_Kindle) and their [Serial Numbers](https://wiki.mobileread.com/wiki/Kindle_Serial_Numbers).
 
 ## Usage:
 
