@@ -14,8 +14,11 @@ fi
 
 eips_log() {
     echo "$1" >> "$LOG"
-    printf '%s\n' "$1"
-    eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null || true
+    if [ "${TAILSCALE_SCRIPTLET:-0}" = "1" ]; then
+        printf '%s\n' "$1"
+    else
+        eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null || true
+    fi
 }
 
 echo "[$(date)] Starting Tailscale..." > "$LOG"

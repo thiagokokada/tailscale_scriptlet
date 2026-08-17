@@ -8,7 +8,7 @@ pause() {
 }
 
 run() {
-    "$BIN/$1"
+    TAILSCALE_SCRIPTLET=1 "$BIN/$1"
     pause
 }
 
