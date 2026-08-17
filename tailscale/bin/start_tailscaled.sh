@@ -5,7 +5,8 @@ LOG=$BIN/tailscaled_start_log.txt
 
 eips_log() {
     echo "$1" >> "$LOG"
-    eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null
+    printf '%s\n' "$1"
+    eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null || true
 }
 
 echo "[$(date)] Starting tailscaled..." > "$LOG"

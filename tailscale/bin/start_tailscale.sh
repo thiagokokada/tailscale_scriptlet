@@ -14,7 +14,8 @@ fi
 
 eips_log() {
     echo "$1" >> "$LOG"
-    eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null
+    printf '%s\n' "$1"
+    eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null || true
 }
 
 echo "[$(date)] Starting Tailscale..." > "$LOG"
@@ -44,4 +45,3 @@ else
     eips_log "Tailscale: fill in auth.key and retry"
     exit 1
 fi
-

@@ -9,6 +9,7 @@ VERSIONS_TO_TRY=3
 # Print a message to the Kindle screen via eips and append to the log file.
 # Text is padded to 50 chars so each call fully overwrites the previous line.
 eips_print() {
+    printf '%s\n' "$1"
     eips 0 22 "$(printf '%-50s' "$1")" 2>/dev/null
 }
 
