@@ -1,11 +1,11 @@
-# Tailscale for Kindle (KUAL and standalone)
+# Tailscale for Kindle (KUAL and scriptlet)
 
 This (very) simple repo allows you to connect your kindle remotely from anywhere using Tailscale VPN.
 
 The original KUAL extension remains supported. For Kindles using the newer
-scriptlet workflow, the repository also includes a standalone launcher that
+scriptlet workflow, the repository also includes a scriptlet launcher that
 bundles kterm and provides the same controls in a terminal menu. See
-[`standalone/README.md`](standalone/README.md) and run `./build-standalone.sh`
+[`scriptlet/README.md`](scriptlet/README.md) and run `./build-scriptlet.sh`
 to create the Kindle-root ZIP.
 
 ## Prerequisites:

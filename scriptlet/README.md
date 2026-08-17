@@ -1,10 +1,10 @@
-# Tailscale standalone launcher
+# Tailscale scriptlet launcher
 
 This payload runs without KUAL. It uses SH_Integration to expose
 `documents/Tailscale.sh` in the Kindle Library and the bundled kterm 2.6
 terminal to present a small interactive menu.
 
-From the repository root, run `./build-standalone.sh`. Copy the contents of
+From the repository root, run `./build-scriptlet.sh`. Copy the contents of
 the generated ZIP to the Kindle USB root. Fill in
 `extensions/tailscale/bin/auth.key`, or use an existing Tailscale state file,
 then open **Tailscale** from the Library.

@@ -9,7 +9,7 @@ MENU=/mnt/us/extensions/tailscale-menu.sh
 
 if [ ! -x "$KTERM" ]; then
     echo "Tailscale: kterm is not installed."
-    echo "Copy the complete standalone package to the Kindle root."
+    echo "Copy the complete scriptlet package to the Kindle root."
     exit 1
 fi
 
